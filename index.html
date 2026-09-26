@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Copa GPT - chatbot sobre a história das Copas do Mundo">
+    <title>Copa GPT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="stadium-light light-one"></div>
+        <div class="stadium-light light-two"></div>
+        <div class="stadium-light light-three"></div>
+    </div>
+
+    <main class="app">
+        <header class="header">
+            <div class="brand">
+                <div class="ball">⚽</div>
+                <div>
+                    <h1>COPA GPT</h1>
+                    <p>História, números e debates do futebol</p>
+                </div>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                ONLINE
+            </div>
+        </header>
+
+        <section id="chat" class="chat" aria-live="polite">
+            <div class="message bot">
+                <div class="avatar">🏆</div>
+                <div class="bubble">
+                    <strong>Copa GPT</strong>
+                    <p>Fala! ⚽🏆</p>
+                    <p>
+                        Manda sua pergunta sobre qualquer Copa do Mundo,
+                        jogador, seleção ou partida.
+                    </p>
+                    <p>
+                        Quer entrar naquele debate que divide qualquer
+                        roda de futebol? 😄
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="suggestions">
+            <button data-question="Quais foram todas as seleções campeãs da Copa do Mundo?">🏆 Campeões</button>
+            <button data-question="Fale sobre Pelé e suas participações em Copas.">👑 Pelé</button>
+            <button data-question="Quais são alguns dos maiores artilheiros das Copas?">⚽ Artilheiros</button>
+            <button data-question="Compare Brasil de 2002 com Argentina de 2022.">🔥 Debate</button>
+        </div>
+
+        <form id="chatForm" class="input-area">
+            <textarea
+                id="messageInput"
+                placeholder="Pergunte sobre qualquer Copa..."
+                rows="1"
+                maxlength="4000"
+                autocomplete="off"
+            ></textarea>
+
+            <button id="sendButton" type="submit">
+                <span>ENVIAR</span> ⚽
+            </button>
+        </form>
+
+        <footer>
+            Copa GPT • desenvolvido com HTML, CSS, JavaScript, Python e Groq
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

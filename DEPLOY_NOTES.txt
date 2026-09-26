@@ -1,0 +1,1 @@
+Antes do deploy, edite script.js e substitua SEU-BACKEND.onrender.com pela URL real do Render.
