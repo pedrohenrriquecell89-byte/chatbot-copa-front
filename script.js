@@ -8,7 +8,7 @@
 // Em produção:
 // const API_URL = "https://SEU-BACKEND.onrender.com";
 
-const API_URL = "https://backend-8sl2.onrender.com/chat";
+const API_URL = "https://backend-8sl2.onrender.com";
 
 const chat = document.getElementById("chat");
 const form = document.getElementById("chatForm");
